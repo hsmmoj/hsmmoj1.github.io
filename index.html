@@ -1,1 +1,213 @@
-Under Construction!
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hesam Mojtahedi</title>
+  <meta name="description" content="Hesam Mojtahedi, robotics Ph.D. student in the SDSU–UCSD Joint Doctoral Program.">
+  <meta name="author" content="Hesam Mojtahedi">
+  <meta property="og:title" content="Hesam Mojtahedi">
+  <meta property="og:description" content="Robotics Ph.D. student, SDSU–UCSD Joint Doctoral Program.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="brand">Hesam Mojtahedi</a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#robot">Robot Integration</a>
+        <a href="#" class="cv-soon">CV</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+
+    <!-- ============ ROBOT ANIMATION ============ -->
+    <svg id="robot-anim" class="robot-anim" viewBox="190 22 440 160" aria-hidden="true">
+      <line class="ra-ground" x1="190" y1="177" x2="630" y2="177"/>
+      <g class="ra-table">
+        <path d="M215 139H285M222 139V177M278 139V177"/>
+        <path d="M535 139H605M542 139V177M598 139V177"/>
+      </g>
+      <g class="ra-base">
+        <rect x="372" y="141" width="76" height="20" rx="4"/>
+        <circle cx="386" cy="167" r="9"/><circle cx="434" cy="167" r="9"/>
+        <path d="M410 141V72M380 72H440M410 72V58"/>
+      </g>
+      <g data-part="head" class="ra-head">
+        <rect x="399" y="46" width="22" height="12" rx="3"/>
+        <circle cx="405" cy="52" r="2.2"/><circle cx="415" cy="52" r="2.2"/>
+      </g>
+      <g class="ra-arm">
+        <path data-part="left-link" class="ra-link"/>
+        <path data-part="left-grip" class="ra-grip"/>
+        <path data-part="right-link" class="ra-link"/>
+        <path data-part="right-grip" class="ra-grip"/>
+        <circle class="ra-joint" cx="380" cy="72" r="5"/><circle class="ra-joint" cx="440" cy="72" r="5"/>
+        <circle data-part="left-elbow" class="ra-joint" r="4.5"/><circle data-part="right-elbow" class="ra-joint" r="4.5"/>
+        <circle data-part="left-wrist" class="ra-joint" r="3.5"/><circle data-part="right-wrist" class="ra-joint" r="3.5"/>
+      </g>
+      <rect data-part="cube" class="ra-cube" width="14" height="14" rx="2"/>
+    </svg>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="intro">
+      <img class="portrait" src="assets/img/profile.jpg" alt="Hesam Mojtahedi" width="240" height="300">
+      <div>
+        <h1>Hesam Mojtahedi</h1>
+        <p class="role">Ph.D. Student · SDSU–UC San Diego</p>
+        <p>
+          I am a Ph.D. student in the SDSU–UC San Diego Joint Doctoral Program, advised by
+          <a href="https://ccee.sdsu.edu/people/reza-akhavian">Prof. Reza Akhavian</a> and
+          <a href="https://natanaso.github.io/">Prof. Nikolay Atanasov</a>. I work on
+          <strong>mobile and bimanual manipulation</strong>, and I built our lab's dual-arm mobile manipulator.
+        </p>
+        <p>
+          My long-term goal is robots that <strong>learn and adapt</strong> like modern learning systems
+          while staying as <strong>reliable</strong> as classical robotics. Right now I'm exploring this
+          from a few directions: <strong>world models and robot learning</strong> for manipulation,
+          <strong>safe and efficient motion planning</strong>, and ways to give learned behavior
+          <strong>performance guarantees</strong> that hold up as robots and tasks grow more complex.
+        </p>
+        <p>
+          Always happy to chat about robots and robotics. If you're around San Diego, feel free to reach out by email!
+        </p>
+        <p class="edu">
+          Ph.D., SDSU–UC San Diego, 2026–present<br>
+          M.S. Intelligent Systems, Robotics &amp; Control, UC San Diego, 2022–2026<br>
+          B.S. Electrical &amp; Computer Engineering (Control), minor in Computer Engineering, University of Tehran, 2017–2022
+        </p>
+        <p class="links">
+          <a href="mailto:hmojtahedi@ucsd.edu">Email</a>
+          <a href="#" class="cv-soon">CV</a>
+          <a href="https://scholar.google.com/citations?user=Kr2UwU0AAAAJ&amp;hl=en">Scholar</a>
+          <a href="https://github.com/hsmmoj">GitHub</a>
+          <a href="https://www.linkedin.com/in/hesam-mojtahedi">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>Oct 2026</time><span>FLASH-CBF-RRT is out! See the <a href="https://mamani828.github.io/FLASH-CBF-RRT/">project page</a>.</span></li>
+        <li><time>Aug 2026</time><span>Started my Ph.D. in the SDSU–UCSD Joint Doctoral Program.</span></li>
+        <li><time>Mar 2026</time><span>Completed my M.S. at UC San Diego.</span></li>
+        <li><time>Nov 2025</time><span>New preprint on BIM-aware UAV–UGV navigation.</span></li>
+        <li><time>Sep 2025</time><span>New preprint: GLIDE, aerial–ground search and rescue.</span></li>
+        <li><time>Dec 2023</time><span>Paper presented at IEEE CDC 2023.</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+
+      <!-- One <article class="pub"> per paper. Wrap your name in <span class="me">. -->
+      <article class="pub">
+        <a class="pub-thumb" href="https://mamani828.github.io/FLASH-CBF-RRT/">
+          <video autoplay muted loop playsinline preload="metadata" poster="assets/img/flash-cbf-rrt.jpg" aria-label="Reachy2 mobile manipulator planning around obstacles">
+            <source src="assets/img/flash-cbf-rrt.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div>
+          <h3>FLASH-CBF-RRT: Fast Lipschitz-Adaptive Safe Horizon CBF Steering for Certified Motion Planning</h3>
+          <p class="authors">Mani Amani*, <span class="me">Hesam Mojtahedi</span>*, Reza Akhavian, Nikolay Atanasov, Ki Myung Brian Lee</p>
+          <p class="venue">Under review, 2026 · <a href="https://mamani828.github.io/FLASH-CBF-RRT/">project</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <a class="pub-thumb" href="https://arxiv.org/abs/2511.14037"><img src="assets/img/proj-bim.svg" alt="" loading="lazy"></a>
+        <div>
+          <h3>BIM-Discrepancy-Driven Active Sensing for Risk-Aware UAV-UGV Navigation</h3>
+          <p class="authors"><span class="me">Hesam Mojtahedi</span>, Reza Akhavian</p>
+          <p class="venue">arXiv, 2025 · <a href="https://arxiv.org/abs/2511.14037">arXiv</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <a class="pub-thumb" href="https://arxiv.org/abs/2509.14210"><img src="assets/img/proj-sar.svg" alt="" loading="lazy"></a>
+        <div>
+          <h3>GLIDE: A Coordinated Aerial-Ground Framework for Search and Rescue in Unknown Environments</h3>
+          <p class="authors">Seth Farrell, Chenghao Li, Hong-Den Yu, <span class="me">Hesam Mojtahedi</span>, Sicun Gao, Henrik I. Christensen</p>
+          <p class="venue">arXiv, 2025 · <a href="https://arxiv.org/abs/2509.14210">arXiv</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <a class="pub-thumb" href="https://doi.org/10.1109/CDC49753.2023.10383895"><img src="assets/img/proj-sdp.svg" alt="" loading="lazy"></a>
+        <div>
+          <h3>A Spectral Bundle Method for Sparse Semidefinite Programs</h3>
+          <p class="authors"><span class="me">Hesam Mojtahedi</span>, Feng-Yi Liao, Yang Zheng</p>
+          <p class="venue">IEEE CDC, 2023 · <a href="https://doi.org/10.1109/CDC49753.2023.10383895">paper</a></p>
+        </div>
+      </article>
+
+      <p class="note">+ 1 paper under review. * equal contribution.</p>
+
+      <h3 class="subhead">Earlier work</h3>
+      <ul class="compact">
+        <li><a href="https://doi.org/10.1007/s00723-022-01482-y">Synthetic DW-MR images with different b values using deep learning</a>, <em>Applied Magnetic Resonance</em>, 2022</li>
+        <li><a href="https://arxiv.org/abs/2110.04124">Ensemble Neural Representation Networks</a>, arXiv, 2021</li>
+        <li><a href="https://doi.org/10.1186/s43055-021-00524-y">Detecting COVID-19 in chest images with deep transfer learning</a>, <em>Egyptian J. Radiology and Nuclear Medicine</em>, 2021</li>
+      </ul>
+    </section>
+
+    <!-- ============ ROBOT ============ -->
+    <section id="robot" class="section">
+      <h2>Robot Integration</h2>
+      <div class="robot">
+        <figure class="robot-main"><img src="assets/img/husky-robot.jpg" alt="Clearpath Husky with two UR5e arms, grippers, LiDAR and a pan-tilt neck camera" loading="lazy"></figure>
+        <figure class="robot-side"><img src="assets/img/husky-neck.jpg" alt="Custom pan-tilt neck carrying a stereo camera" loading="lazy"><figcaption>Custom pan-tilt neck</figcaption></figure>
+      </div>
+      <p>
+        I built and integrated our lab's <strong>mobile bimanual manipulator</strong>: a Clearpath Husky A200
+        with two UR5e arms and Robotiq 2F-85 grippers.
+      </p>
+      <ul class="robot-list">
+        <li><strong>Robot neck.</strong> A custom 3D-printed pan-tilt mount driven by Dynamixel servos, carrying a stereo head camera.</li>
+        <li><strong>VR teleoperation.</strong> A Unity / Meta Quest interface. The operator sees the robot's live stereo view, the neck follows their head, and their hands drive both arms.</li>
+        <li><strong>Sensing.</strong> Wrist-mounted RealSense cameras, a Velodyne 3D LiDAR, and an IMU.</li>
+        <li><strong>Software.</strong> ROS 2 integration and a complete robot description (URDF), with simulation-ready models for MuJoCo and Isaac Sim.</li>
+      </ul>
+      <p class="note">Interested in learning more about the platform? Feel free to <a href="mailto:hmojtahedi@ucsd.edu">reach out</a>.</p>
+    </section>
+
+    <!-- ============ OUTSIDE ============ -->
+    <section id="outside" class="section">
+      <h2>Outside the Lab</h2>
+      <p>
+        When I'm not working with robots, you'll usually find me at the gym, cooking something new,
+        or reading a book on personal growth.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    © <span id="year">2026</span> Hesam Mojtahedi
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/robot.js"></script>
+</body>
+</html>

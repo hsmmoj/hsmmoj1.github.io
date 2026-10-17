@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#f1efe9"/>
+  <!-- terrain contours -->
+  <g fill="none" stroke="#d9d3c6" stroke-width="1.2">
+    <path d="M-10 160 C 60 130, 120 175, 200 150 S 300 120, 330 140"/>
+    <path d="M-10 130 C 70 100, 130 140, 210 118 S 300 90, 330 105"/>
+    <path d="M-10 100 C 80 70, 140 105, 220 85 S 300 60, 330 70"/>
+    <path d="M-10 70 C 90 40, 150 70, 230 52 S 300 30, 330 35"/>
+  </g>
+  <!-- obstacles -->
+  <g fill="#3d424d" opacity=".25"><circle cx="150" cy="118" r="10"/><circle cx="200" cy="150" r="8"/><circle cx="118" cy="160" r="7"/></g>
+  <!-- planned path -->
+  <path d="M40 172 C 90 172, 100 140, 130 140 S 175 128, 180 118 S 230 95, 262 62" fill="none" stroke="#0f6e78" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 7"/>
+  <!-- victim target -->
+  <g transform="translate(262 58)"><circle r="16" fill="none" stroke="#c2562b" stroke-width="1.5" opacity=".5"/><circle r="9" fill="none" stroke="#c2562b" stroke-width="1.5"/><circle r="3" fill="#c2562b"/></g>
+  <!-- UGV -->
+  <g transform="translate(40 172)"><rect x="-12" y="-8" width="24" height="16" rx="3" fill="#0f6e78"/><circle cx="-7" cy="9" r="3.5" fill="#3d424d"/><circle cx="7" cy="9" r="3.5" fill="#3d424d"/></g>
+  <!-- UAV 1 (scout) -->
+  <g transform="translate(120 110)" stroke="#3d424d" stroke-width="2" fill="none"><path d="M-10 -5L10 5M-10 5L10 -5"/><circle cx="-10" cy="-5" r="4"/><circle cx="10" cy="5" r="4"/><circle cx="-10" cy="5" r="4"/><circle cx="10" cy="-5" r="4"/><rect x="-3" y="-2.5" width="6" height="5" fill="#0f6e78" stroke="none"/></g>
+  <!-- UAV 2 (searcher) -->
+  <path d="M232 40 L248 66 L276 66 Z" fill="#c2562b" opacity=".12"/>
+  <g transform="translate(230 36)" stroke="#3d424d" stroke-width="2" fill="none"><path d="M-10 -5L10 5M-10 5L10 -5"/><circle cx="-10" cy="-5" r="4"/><circle cx="10" cy="5" r="4"/><circle cx="-10" cy="5" r="4"/><circle cx="10" cy="-5" r="4"/><rect x="-3" y="-2.5" width="6" height="5" fill="#c2562b" stroke="none"/></g>
+</svg>

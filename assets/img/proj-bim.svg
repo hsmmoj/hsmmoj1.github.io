@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#eef3f3"/>
+  <!-- occupancy grid -->
+  <g fill="#0f6e78">
+    <rect x="40" y="40" width="20" height="20" opacity=".08"/><rect x="60" y="40" width="20" height="20" opacity=".12"/>
+    <rect x="200" y="60" width="20" height="20" opacity=".55"/><rect x="220" y="60" width="20" height="20" opacity=".35"/>
+    <rect x="200" y="80" width="20" height="20" opacity=".4"/><rect x="140" y="120" width="20" height="20" opacity=".15"/>
+  </g>
+  <g stroke="#cddadb" stroke-width="1"><path d="M0 20H320M0 40H320M0 60H320M0 80H320M0 100H320M0 120H320M0 140H320M0 160H320M0 180H320M20 0V200M40 0V200M60 0V200M80 0V200M100 0V200M120 0V200M140 0V200M160 0V200M180 0V200M200 0V200M220 0V200M240 0V200M260 0V200M280 0V200M300 0V200"/></g>
+  <!-- BIM walls (dashed = design) -->
+  <path d="M30 30H290V170H30Z M180 30V110 M30 110H120" fill="none" stroke="#3d424d" stroke-width="2.5" stroke-dasharray="7 5" opacity=".55"/>
+  <!-- discrepancy -->
+  <rect x="196" y="56" width="48" height="48" fill="none" stroke="#c2562b" stroke-width="2" rx="3"/>
+  <text x="248" y="52" font-family="monospace" font-size="9" fill="#c2562b">Δ BIM</text>
+  <!-- corridor path -->
+  <path d="M60 150 C 110 150, 130 135, 150 125 S 230 140, 270 140" fill="none" stroke="#0f6e78" stroke-width="3" stroke-linecap="round"/>
+  <!-- UGV -->
+  <g transform="translate(60 150)"><rect x="-12" y="-8" width="24" height="16" rx="3" fill="#0f6e78"/><circle cx="-7" cy="9" r="3.5" fill="#3d424d"/><circle cx="7" cy="9" r="3.5" fill="#3d424d"/></g>
+  <!-- UAV + sensing cone -->
+  <path d="M175 40 L200 66 L244 66 Z" fill="#c2562b" opacity=".12"/>
+  <g transform="translate(170 38)" stroke="#3d424d" stroke-width="2" fill="none">
+    <path d="M-12 -6L12 6M-12 6L12 -6"/><circle cx="-12" cy="-6" r="5"/><circle cx="12" cy="6" r="5"/><circle cx="-12" cy="6" r="5"/><circle cx="12" cy="-6" r="5"/>
+    <rect x="-4" y="-3" width="8" height="6" fill="#0f6e78" stroke="none"/>
+  </g>
+</svg>
